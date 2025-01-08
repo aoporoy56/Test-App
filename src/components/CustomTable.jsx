@@ -10,7 +10,7 @@ function CustomTable() {
   const fetchData = async (page = 1, searchQuery = "", rows = rowsPerPage) => {
     try {
       const response = await fetch(
-        `/api/?paginate=${rows}&search=${searchQuery}&page=${page}`
+        `https://api.razzakfashion.com/?paginate=5&search=${searchQuery}&page=${page}`
       );
 
       if (!response.ok) {
